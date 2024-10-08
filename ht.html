@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Register</h1>
+    <hr>
+    <form id="registrationForm" onsubmit="return validateForm()">
+    <label for = "name">Name :</label>
+    <input type="text" id="name" placeholder="Name" required="true"><br>
+    <label for = "email">Email :</label>
+    <input type="email" id="email" placeholder="Email"><br>
+    <label for="bdate">Birthday :</label>
+    <input type="date" id="bdate" placeholder="Birth Date"><br>
+    <label for ="password">Password :</label>
+    <input type="password" id="password" placeholder="Password" required><br>
+    <label for = "confirmPassword">Enter to confirm :</label>
+    <input type="password" id="confirmPassword" placeholder="Confirm Password" required><br>
+    <div>
+        <input type="reset">
+    </div>
+    <button type="submit" >Submit</button>
+    <p id="error" class="error"></p>
+  </form>
+    <script src = "java.js"></script>
+</body>
+</html>
